@@ -34,6 +34,20 @@ body {
   display: flex;
   place-content: space-between;
 }
+.linkmove {
+
+  background-image: linear-gradient(#04009a, #04009a),
+  linear-gradient(#04009a, #04009a);
+  background-size: 20px 2px, 100% 2px, 0 2px;
+  background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .3s linear, background-position .3s linear;
+}
+.linkmove:hover {
+  background-size: 20px 2px, 0 2px, 100% 2px;
+  background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+}
+
 
 .primary-cta {
   background-color: var(--primary-color);
