@@ -1,0 +1,54 @@
+:root {
+  --primary-color:#007AF3
+;
+}
+
+body {
+  background: #F2F2F2;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.navbar {
+  background: white;
+  padding: 2em;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-right: 46px;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.primary-cta {
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: .6em 1.3em;
+  font-size: 1.4em;
+  border-radius: 5em;
+  font-weight: bold;
+  display: inline-block;
+}
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.center-screen .csv{
+
+  margin-bottom: 75px;
+}
