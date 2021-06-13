@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Tool</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+    
+   
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class = "logo" href="#">Home</a>
+            <nav>
+                <a class = "logo" href="#">CSV/Excel</a>
+                <a class = "logo" href="#">Database</a>
+            </nav>
+        </div>
+   </div>
+   <div class="form-container">
+       <div class="formHolder">
+            <div class="dbformHeader">
+                <p>Choose Primary Key</p>
+            </div>
+            <form method="post" enctype="multipart/form-data" action="">
+                <div class="pkcontainer">
+                    <select multiple data-multi-select-plugin required>
+                        <option value="EmployeeId">EmployeeId</option>
+                        <option value="EmployeeName">EmployeeName</option>
+                        <option value="City">City</option>
+                        <option value="Position">Position</option>
+                        <option value="DoJ">DoJ</option>
+                        <option value="Manager">Manager Name</option>
+                        <option value="Manager Name1">Manager Name1</option>
+                        <option value="Manager Name2">Manager Name2</option>
+                        <option value="Manager Name3">Manager Name23</option>
+                        <option value="Manager Name4">Manager Name4</option>
+                    </select>
+                </div>
+                <div>
+                  <button name="compare" type="submit" id="compare-btn">Compare</button>    
+               </div>    
+            </form>
+       </div>
+   </div>
+</body>
+<script src="{{url_for('static', filename='Js/pkload.js')}}"></script>
+</html>

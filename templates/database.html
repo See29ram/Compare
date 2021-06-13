@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Tool</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+   
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class = "navstyle" href="#">Home</a>
+            
+            <nav>
+                <a class = "navstyle" href="#">CSV/Excel</a>
+                <a class = "navstyle" href="#">Database</a>
+            </nav>
+        </div>
+   </div>
+   <div class="db-container">
+    <div class="dbformHolder">
+        <div class="dbformHeader">
+            <p>Database Form</p>
+        </div>
+        <form>
+            <div>        
+                <select required autofocus>
+                    <option value="" selected>Select Your Database</option>
+                    <option>MS Sql Server</option>
+                    <option>MySQL</option>
+                </select>
+            </div>
+            <div>                
+                <input placeholder="Server Name" type="text" required autofocus>
+            </div>
+            <div>               
+                <input placeholder="Database Name" type="text" required autofocus>
+            </div>
+            <div>               
+                <input placeholder="Table Name" type="text" required autofocus>
+            </div>
+            <div>               
+                <input placeholder="User Id" type="text" required autofocus>
+            </div>
+            <div>               
+                <input placeholder="Password" type="text" required autofocus>
+            </div>
+            <div>
+                <button type="submit">Connect</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+<script src="{{url_for('static', filename='Js/pkload.js')}}"></script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Tool</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class = "logo" href="#">Home</a>
+            <nav>
+                <a class = "logo" href="#">CSV/Excel</a>
+                <a class = "logo" href="#">Database</a>
+            </nav>
+        </div>
+   </div>
+   <div class="form-container">
+       <div class="formHolder">
+            <div class="dbformHeader">
+                <p>CSV or EXCEL Upload to Compare</p>
+            </div>
+            <form method="post" enctype="multipart/form-data" action="">
+                <div id="cont-src">
+                  <span id="filename-src">Select Source file</span>
+                  <label for="file-upload-src">Browse<input type="file" id="file-upload-src"></label>
+               </div>
+               <div id="cont-target">
+                  <span id="filename-target">Select Target file</span>
+                  <label for="file-upload-target">Browse<input type="file" id="file-upload-target"></label>
+               </div> 
+               <div>             
+                  <button name="compare" type="submit" id="compare-btn">Proceed</button>    
+               </div>    
+            </form>
+       </div>
+   </div>
+</body>
+<script src="{{url_for('static', filename='Js/fileupload.js')}}"></script>
+</html>
