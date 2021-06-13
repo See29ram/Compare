@@ -1,26 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comparison Tool</title>
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
-   
-</head>
-<body>
-    <div class="navbar">
-        <div class="container">
-            <a class = "logo" href="/">Home</a>
-            <nav>
-                <a class = "logo" href="/fileComparison">CSV/Excel</a>
-                <a class = "logo" href="/database">Database</a>
-            </nav>
-        </div>
+{% extends 'base.html' %}
+{% block content %}
+   <div class="form-container">
+    <div class="formHolder">
+        <form action="">
+            <div>
+                <a href="/fileComparison" class="primary-cta csv">CSV / EXCEL</a>
+            </div>
+            <div>
+                <a href="/database" class="primary-cta">DATABASE</a>
+            </div>
+        </form>
+    </div>
    </div>
-   <div class="center-screen">
-    <a href="/fileComparison" class="primary-cta csv">CSV / EXCEL</a>
-    <a href="/database" class="primary-cta">DATABASE</a>
-   </div>
-</body>
-</html>
+<!--   <div class="center-screen">-->
+<!--    <a href="/fileComparison" class="primary-cta csv">CSV / EXCEL</a>-->
+<!--    <a href="/database" class="primary-cta">DATABASE</a>-->
+<!--   </div>-->
+{% endblock %}
