@@ -3,6 +3,7 @@ from flaskwebgui import FlaskUI
 import pandas as pd
 
 app = Flask(__name__)
+#This is for Desktop app
 # ui = FlaskUI(app,start_server='flask')
 
 
